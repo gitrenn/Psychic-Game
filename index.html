@@ -11,44 +11,57 @@
 </head>
 
 <body>
-    <header>
-        <h1>The Psychic Game</h1>
-    </header>
-    <table>
-        <tr>
-            <th>
-                <p>Wins: </p>
-            </th>
-            <th>
-                <p id="wins">0</p>
-            </th>
-        </tr>
-        <tr>
-            <th>
-                <p>Losses: </p>
-            </th>
-            <th>
-                <p id="losses">0</p>
-            </th>
-        </tr>
-        <tr>
-            <th>
-                <p>Guesses Left: </p>
-            </th>
-            <th>
-                <p id="guesses_left">9</p>
-            </th>
-        </tr>
-        <tr>
-            <th>
-                <p>Your Guesses so far: </p>
-            </th>
-            <th>
-                <p id="user_guesses"></p>
-            </th>
-        </tr>
-    </table>
-   
+
+    <div class="container">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-3">The Psychic Game</h1>
+                <p class="lead">Guess what letter I'm thinking of</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <table class="table table-responsive">
+                    <tr>
+                        <th>
+                            <p>Wins: </p>
+                        </th>
+                        <th>
+                            <p id="wins">0</p>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <p>Losses: </p>
+                        </th>
+                        <th>
+                            <p id="losses">0</p>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <p>Guesses Left: </p>
+                        </th>
+                        <th>
+                            <p id="guesses_left">9</p>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <p>Your Guesses so far: </p>
+                        </th>
+                        <th>
+                            <p id="user_guesses"></p>
+
+                        </th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+
+    </div>
 
     <script src="assets/javascript/game.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

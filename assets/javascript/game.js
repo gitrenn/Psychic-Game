@@ -56,7 +56,7 @@ function printUserGuess() {
 
         // print the user pressed key on the document 
         var guessList = document.getElementById("user_guesses");
-        var keyName = document.createTextNode(keyPress + ", ");
+        var keyName = document.createTextNode(keyPress + " ");
         guessList.appendChild(keyName);
 
         if(counter < 9){
@@ -77,7 +77,7 @@ function printUserGuess() {
            
         }
         printLeft();
-        
+
         function clearGuess(){
             guessList.innerHTML="";
         }
